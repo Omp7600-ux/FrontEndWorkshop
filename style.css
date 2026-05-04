@@ -1,107 +1,137 @@
-  
- 
-  @font-face { 
-    font-family: SeafordBold; 
-    src: url(./font/SeafordBold.ttf); 
-    font-weight: normal; 
-    }    
-    
-  @font-face { 
-    font-family: SeafordRg; 
-    src: url(./font/SeafordRg.ttf); 
-    font-weight: normal; 
-    }
+@font-face { 
+  font-family: SeafordBold; 
+  src: url(./font/SeafordBold.ttf); 
+}    
 
-    .container{
-      width: 1000px;
-      background-color: #fff;
-      margin: auto;
-
-    }
- h1 {
-    color: navy;
-    font-family: 'SeafordBold';
-    text-align: center;
-  }
-
-  h2 {
-    font-family: SeafordRg;
-    color: navy;
+@font-face { 
+  font-family: SeafordRg; 
+  src: url(./font/SeafordRg.ttf); 
 }
 
-  p.myP{
-    color: brown;
-    text-align: justify;
-   text-justify: inter-word;
-  }
+/* BODY */
+body {
+  font-family: SeafordRg;
+  background-color: #f5f5f5;
+  margin: 0;
+}
 
-  p{
-    font-family: SeafordRg;
-    color: black;
-  }
+/* HEADER */
+#header {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
 
-  p.myP:hover{background-color: #ddd;}
+h1 {
+  font-family: SeafordBold;
+  margin: 0;
+}
 
+h2 {
+  font-family: SeafordRg;
+  color: navy;
+}
 
- body {
-        font-family: SeafordRg;
-        background-color:white;
-      }
+/* CONTENT */
+#content {
+  width: 1000px;
+  margin: 20px auto;
+}
 
+/* SECTION CARDS */
+.section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
+/* PARAGRAPHS */
+p {
+  color: black;
+}
 
-td {
-    text-align: center;
-  }
+p.myP {
+  color: brown;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
+p.myP:hover {
+  background-color: #ddd;
+}
 
+/* LISTS */
+ul:hover {
+  background-color: #ddd;
+}
 
-
-  ol:hover{background-color: #ddd;}
-
-ul:hover{background-color: #ddd;}
+ol:hover {
+  background-color: #ddd;
+}
 
 ol { 
-    list-style: none; 
-    counter-reset: num; 
+  list-style: none; 
+  counter-reset: num; 
 } 
 
 ol li { 
-    counter-increment: num; 
+  counter-increment: num; 
 }  
-  ol li::before { 
-    content:counter(num) "."; 
-    color: blue;     
+
+ol li::before { 
+  content: counter(num) "."; 
+  color: blue;     
 } 
 
-
+/* TABLE */
 #mytable {
-    font-family: SeafordRg;
-    border-collapse: collapse;
-    width: 30%;
-  }
-  
-  #mytable td, #mytable th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #mytable tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #mytable tr:hover {background-color: #ddd;}
-  
-  #mytable th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: grey;
-    color: white;
-  }
+  font-family: SeafordRg;
+  border-collapse: collapse;
+  width: 50%;
+}
 
-  label { display: inline-block; width: 100px; text-align: right; }
- 
- img.myImage{
+#mytable td, #mytable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#mytable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#mytable tr:hover {
+  background-color: #ddd;
+}
+
+#mytable th {
+  background-color: grey;
+  color: white;
+}
+
+/* FORM */
+label { 
+  display: inline-block; 
+  width: 100px; 
+  text-align: right; 
+}
+
+/* IMAGE */
+img.myImage {
   height: 140px;
   width: 150px;
   border-radius: 50%;
- }
+  display: block;
+  margin: 10px auto;
+}
+
+/* FOOTER */
+#footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
